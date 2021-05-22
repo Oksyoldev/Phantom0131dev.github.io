@@ -1,0 +1,75 @@
+.background {
+  width: 1924px;
+  height: 1282px;
+  background-size: cover;
+  background-position: absolute;
+  position: absolute;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVIGATION*/
+.logonav {
+  position: relative;
+  width: 184px;
+  height: 182px;
+  left: 2701px;
+}
+.Main {
+  position: absolute;
+  width: 316px;
+  height: 84px;
+  left: 1992px;
+
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 77px;
+
+  color: #  000000;
+}
+.Projects {
+  position: absolute;
+  width: 366px;
+  height: 60px;
+  top: -195px;
+  left: 2347px;
+
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 77px;
+
+  color: #000000;
+}
+.Contacts {
+  position: absolute;
+  width: 357px;
+  height: 84px;
+
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 77px;
+
+  color: #000000;
+}
+.Auth {
+  position: absolute;
+  width: 390px;
+  height: 88px;
+
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 77px;
+
+  color: #000000;
+}
+/* гх desktop далбоеб*/
