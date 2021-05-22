@@ -11,3 +11,22 @@
 }
 
 /*NAVIGATION*/
+.logonav {
+  position: relative;
+  width: 184px;
+  height: 182px;
+  top: -256px;
+  left: 2701px;
+}
+.Main {
+  position: absolute;
+  width: 316px;
+  height: 84px;
+
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 77px;
+  color: #000000;
+}
