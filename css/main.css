@@ -11,37 +11,46 @@
   background-image: url("../images/background.jpg");
   background-size: cover;
 }
-.header .top-menu {
+.header .main-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 55px;
   margin-top: 25px;
+  list-style-type: none;
 }
-.header .top-menu a {
+.header .main-menu a {
   font-size: 28px;
   font-family: "Neucha";
   color: #000;
   text-decoration: none;
 }
-.header .top-menu a:hover {
+.header .main-menu a:hover {
   text-decoration: underline;
 }
-.header .top-menu .logonav {
+.header .main-menu .logomenu {
   height: 55px;
   cursor: pointer;
 }
+/*END NAVIGATION*/
 
-/*NAVLINE*/ 
-.line {
-  display: flex;
+
+.header .aboutcompany {
   position: absolute;
   width: 100%;
-  height: 0px;
-  top: 90px;
+  margin-top: 300px;
+  height: 248px;
+  left: 10%;
 
-  border: 1px solid rgba(253, 253, 253, 0.56);
-  transform: rotate(-0.12deg);
+
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 106px;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-/*гитхабдесктоп але*/
