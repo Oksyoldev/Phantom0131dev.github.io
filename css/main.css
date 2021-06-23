@@ -97,14 +97,14 @@
 .footer .text {
   display: flex;
   position: absolute;
-  width: 924px;
+  width: 622px;
   height: 50px;
-  left: 10px;
+  left: 57px;
 
-  font-family: Neucha;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 15px;
   line-height: 50px;
 
   color: #000000;
