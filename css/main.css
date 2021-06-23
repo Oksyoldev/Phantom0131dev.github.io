@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100.3vh;
+  height: 100vh;
   background-image: url("../images/background.jpg");
   background-size: cover;
 }
@@ -52,74 +52,4 @@
   font-size: 42px;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header .social {display: inline-block;}
-.header .social a {
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin: 0 10px 10px 0;
-  text-align: center;
-  color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 24px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-}
-.header .social a:hover {
-  border-color: #888;
-  opacity: .8;
-}
-.header .social svg {
-  position: relative;
-  margin-top: 7px;
-  width: 32px;
-  height: 32px;
-}
-.header .discord a {background: #7289da}
-.header .email a {background: #5bc7ff}
-.header .github a {background: #191919}
-.header .youtube a {background: #c4302b}
-
-.header .border{
-  position: absolute;
-  width: 870px;
-  height: 253px;
-  left: 169px;
-  top: 200px;
-
-  background: linear-gradient(0deg, #5871E9, #5871E9), #C4C4C4;
-  border: 1px solid #911BDF;
-  filter: blur(6px);
-  border-radius: 42px;
-}
-
-.footer .text {
-  display: flex;
-  position: absolute;
-  width: 622px;
-  height: 50px;
-  left: 57px;
-
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 50px;
-
-  color: #000000;
-}
-
-.footer .bg-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-image: url("../images/bg-footer.jpg");
-  background-size: cover;
-}
-
-.footer .line {
-  width: 100%;
-  height: 0px;
-  border: 1px solid #000000;
 }
