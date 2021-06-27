@@ -166,6 +166,13 @@ body {
   cursor: pointer;
 }
 
+.wrapper .header .linemenu {
+  position: absolute;
+  size: 10px;
+  width: 100%;
+
+}
+
 .wrapper .header .center-banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +229,9 @@ body {
   font-size: 38px;
   color: #f2f3f4;
 }
+
+
+
 
 @media (prefers-reduced-motion: reduce) {
   * {
