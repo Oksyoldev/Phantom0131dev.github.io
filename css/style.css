@@ -1,179 +1,74 @@
-@charset "UTF-8";
-
-@font-face {
-  font-family: "Neucha";
-  font-display: swap;
-  src: url("../fonts/Neucha/Neucha.woff") format("woff"), url("../fonts/Neucha/Neucha.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Указываем box sizing */
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Убираем внутренние отступы */
-
-ul[class],
-ol[class] {
+* {
+  margin: 0;
   padding: 0;
 }
 
-/* Убираем внешние отступы */
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-pre,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
-
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  background: #fff;
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  position: fixed;
+  width: 100%;
+  background: rgba(34,34,34,.2);
 }
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-
-ul[class],
-ol[class] {
+.menu-main {
   list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-
-a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-span {
-  font-family: inherit;
-}
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-
-html {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: "Neucha", sans-serif;
 }
-
-body {
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  overflow: hidden;
-  overflow-y: scroll;
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.wrapper {
-  width: 100%;
-  height: 100vh;
-}
-
-.wrapper .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.wrapper .header .top-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  height: 75px;
-  margin-top: 25px;
-}
-
-.wrapper .header .top-menu a {
-  color: black;
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.wrapper .header .top-menu a:hover {
-  text-decoration: underline;
-}
-
-.wrapper .header .top-menu .logo {
-  height: 75px;
-  cursor: pointer;
-}
-
-.wrapper .header .linemenu {
+.menu1 {float: left;}
+.menu2 {float: right;}
+.menu-logo {
   position: absolute;
-  size: 10px;
-  width: 100%;
-
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 85px;
+  padding: 0 75px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
 }
 
-.wrapper .header .center-banner {
+.header .center-banner {
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,35 +76,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
-  height: calc(100vh - 100px);
+  height: calc(130vh - 100px);
 }
 
-.wrapper .header .center-banner h1 {
+.header .center-banner h1 {
   font-size: 46px;
   color: #fff;
 }
 
-.wrapper .header:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  background: url("../images/background-gorizontal.jpg") 50% 50%/cover;
-  background-size: cover;
-  -webkit-transform-origin: center center 0;
-      -ms-transform-origin: center center 0;
-          transform-origin: center center 0;
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  width: 100vw;
-  min-height: 100vh;
-}
 
-.wrapper .projects {
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,23 +101,7 @@ body {
   background: black;
 }
 
-.wrapper .projects h1 {
+.projects h1 {
   font-size: 38px;
   color: #f2f3f4;
-}
-
-
-
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-         -o-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
