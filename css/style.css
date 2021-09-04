@@ -111,7 +111,6 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
   width: 100vw;
   height: 100vh;
   z-index: 2;
@@ -121,7 +120,35 @@ body {
 #projects h1 {
   font-size: 38px;
   color: #f2f3f4;
+  padding: 80px;
 }
+
+#team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: transparent;
+}
+
+#team h1 {
+  font-size: 38px;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px;
+}
+#team #block {
+  width: 50%;
+  height: 330px;
+  background-color: #ffffff;
+  border: 2px solid #D4D4D4;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #0099ff;
+  padding: 20px 140px;
+} 
 
 
 footer{background:#8053f6;}
@@ -162,3 +189,4 @@ footer{background:#8053f6;}
 .socialbuttons {
   text-align: center;
 }
+
